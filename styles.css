@@ -1,0 +1,36 @@
+
+.hello{
+    margin: 0;
+    padding: 0;
+}
+.first{
+    animation: neon 1s linear 2 ;
+}
+
+.second{
+    animation: neon 1s linear 0.5s 2 ;
+}
+
+@keyframes neon {
+    0%{
+       visibility: hidden;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        visibility: hidden;
+    }
+    60%{
+        transform: scale(1); 
+    }
+    75%{
+        transform: scale(1.05);
+    }
+    90%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
